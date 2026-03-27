@@ -22,9 +22,10 @@ text_chunks = create_chunks(extracted_data=documents)
 
 # Create Vector Embeddings
 def get_embedding_model():
-    embedding_model = HuggingFaceEmbeddings(model_name="sentecne-transformers/all-MiniLM-L6-V2")
-    return get_embedding_model
+    embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-V2")
+    return embedding_model
 emedding_model= get_embedding_model()
+print(emedding_model.embed_query("Hello world")[:5])
 
 # Store Embeddings in FAISS
 DB_FAISS_PATH="vectorstore/db_faiss"
