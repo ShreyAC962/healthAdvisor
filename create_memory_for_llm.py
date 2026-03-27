@@ -4,6 +4,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 
+
 DATA_PATH = "data/"
 def load_pdf_files(data):
     loader = DirectoryLoader(data, glob="*.pdf", loader_cls=PyPDFLoader)

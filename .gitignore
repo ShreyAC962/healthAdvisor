@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+.venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+*.log
+
+# VSCode / IDEs
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Flutter / Dart
+**/build/
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.xcarchive
+**/ios/Flutter/FlutterPluginRegistrant.*
+
+# Dart packages
+.packages
+.dart_tool/
+
+# Node / JS
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# FAISS / local vector DB
+vectorstore/db_faiss/
+*.sqlite
+*.db
+
+# Hugging Face / Ollama cache
+~/.cache/huggingface/
+ollama_models/
+
+# Secrets / tokens
+*.env
+*.key
+*.pem
